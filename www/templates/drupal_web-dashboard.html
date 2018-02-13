@@ -1,0 +1,34 @@
+	<ion-view view-title="Dashboard" hide-nav-bar="false" >
+		<!-- content -->
+		<ion-content delegate-handle="top" lazy-scroll  id="page-dashboard" class=" page-dashboard">
+		
+		<div class="dashboard-panel">
+			<div class="item item-title item-dark">Dashboard</div>
+			<!-- row -->
+			<div class="row">
+				<a class="col-33 light positive-bg ink"  ng-href="#/drupal_web/node" >
+					<i class="icon ion-android-favorite" ></i>
+					<p>Node</p>
+				</a>
+			</div>
+			<!-- ./row -->
+			<div class="item item-title item-dark">Help</div>
+			<!-- row -->
+			<div class="row">
+				<a class="col-33 light positive-900-bg ink"  ng-href="#/drupal_web/faqs" >
+					<i class="icon ion-android-chat" ></i>
+					<p>Faqs</p>
+				</a>
+				<a class="col-33 light calm-bg ink" ng-click="openURL('market://details?id=com.imabuilder.ihsanaitsolution.drupalweb')" >
+					<i class="icon ion-android-playstore" ></i>
+					<p>Rate This App</p>
+				</a>
+			</div>
+			<!-- ./row -->
+			
+
+		</div>
+
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>

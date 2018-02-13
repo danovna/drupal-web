@@ -1,0 +1,20 @@
+	<ion-view view-title="FAQs" hide-nav-bar="false" >
+		<!-- content -->
+		<ion-content delegate-handle="top" lazy-scroll  id="page-faqs" class=" page-faqs">
+		<ion-list class="card list">
+	<div>
+		<ion-item class="item item-colorful noborder" ng-click="toggleGroup(0)" ng-class="{active: isGroupShown(0)}" ><i class="icon" ng-class="isGroupShown(0) ? 'ion-minus' : 'ion-plus'"></i> <span>Festibulum rhoncus?</span></ion-item>
+		<ion-item class="item item-text-wrap" ng-show="isGroupShown(0)">your answer 0</ion-item>
+	</div>
+	<div>
+		<ion-item class="item item-colorful noborder" ng-click="toggleGroup(1)" ng-class="{active: isGroupShown(1)}" ><i class="icon" ng-class="isGroupShown(1) ? 'ion-minus' : 'ion-plus'"></i> <span>Turpis euismod dapibus?</span></ion-item>
+		<ion-item class="item item-text-wrap" ng-show="isGroupShown(1)">your answer 1</ion-item>
+	</div>
+	<div>
+		<ion-item class="item item-colorful noborder" ng-click="toggleGroup(2)" ng-class="{active: isGroupShown(2)}" ><i class="icon" ng-class="isGroupShown(2) ? 'ion-minus' : 'ion-plus'"></i> <span>Aliquam augue nisi?</span></ion-item>
+		<ion-item class="item item-text-wrap" ng-show="isGroupShown(2)">your answer 2</ion-item>
+	</div>
+</ion-list>
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>

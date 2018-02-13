@@ -1,0 +1,25 @@
+	<ion-view view-title="Node Detail" hide-nav-bar="false" >
+		<!-- content -->
+		<ion-content delegate-handle="top" lazy-scroll scroll="true"   id="page-node_singles" class="page-node_singles">
+		
+			<ion-refresher pulling-text="Pull to refresh..."  on-refresh="doRefresh()"></ion-refresher>
+			<div class="list ">
+
+					<!-- id -->
+					<!-- ./id -->
+
+					<!-- to_trusted -->
+					<div class="item item-text-wrap noborder to_trusted" ng-bind-html="node.body.und[0].value | strHTML"></div>
+					<!-- ./to_trusted -->
+			</div>
+			<div class="list">
+				<div class="item tabs tabs-secondary tabs-icon-left tabs-stable">
+					<a class="tab-item" ng-click="addToDbVirtual(node);"><i class="icon ion-android-add-circle"></i> Add Bookmark</a>
+					<a class="tab-item" ng-href="#/drupal_web/node_bookmark"><i class="icon ion-ios-star"></i> Bookmark</a>
+				</div>
+			</div>
+			<br/><br/><br/>
+
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>
